@@ -18,8 +18,59 @@ body {
 
 /*Header*/
 header {
-    background-color: beige;
+    background-color: papayawhip;
     font-family: 'montserat', sans-serif;
+    width: 100%;
+    position: fixed;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px pink;
+    display: flex;
+    justify-content:stretch;
+    align-items: baseline;
+
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'montserat', sans-serif;
+    text-transform: uppercase;
+}
+
+/*Navigation styles*/
+#navigation {
+    list-style-type: none;
+}
+
+/*Styling for the active tab in the navigation menu*/
+.active {
+    color: blue;
+}
+
+/*Dropdown toggle*/
+nav {
+    position: absolute;
+    width: 100%;
+    background-color: papayawhip;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px palevioletred;
+    display: none;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+#nav-toggle-label{
+    font-size: 2rem;
 }
 
 /*Main*/
